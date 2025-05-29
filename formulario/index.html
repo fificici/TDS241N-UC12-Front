@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formula Cognitionis Divinae</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio Pessoal</title>
 </head>
-<body style="font-family: 'Times New Roman', Times, serif; background-color: #f9f9f9; margin: 0; padding: 0;">
+<body style="margin: 0; font-family: Arial, sans-serif;">
 
-    <div style="position: fixed; top: 0; left: 0; width: 100%; background-color: #333; color: white; padding: 10px 0; text-align: center; z-index: 1000; font-family: 'Times New Roman', Times, serif;">
-        <nav>
-            <a href="#formulario" style="color: white; text-decoration: none; margin: 0 15px;">Formulário</a> |
-            <a href="#contato" style="color: white; text-decoration: none; margin: 0 15px;">Contato</a>
-        </nav>
-    </div>
 
-    <div id="formulario" style="margin-top: 80px; max-width: 600px; margin-left: auto; margin-right: auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); font-family: 'Times New Roman', Times, serif;">
-        <h2 style="text-align: center; margin-bottom: 20px;">Formula Cognitionis Divinae</h2>
-        <form action="#" method="post">
-            <label for="nome" style="display: block; margin-bottom: 5px; font-weight: bold;">Nome:</label>
-            <input type="text" id="nome" name="nome" required
-                style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; font-family: 'Times New Roman', Times, serif;">
+  <header style="position: fixed; top: 0; width: 100%; background-color: #111; color: white; padding: 10px 0; z-index: 1000;">
+    <nav style="display: flex; justify-content: center; gap: 20px;">
+      <a href="#introducao" style="color: white; text-decoration: none;">Início</a>
+      <a href="#habilidades" style="color: white; text-decoration: none;">Habilidades</a>
+      <a href="#contato" style="color: white; text-decoration: none;">Contato</a>
+    </nav>
+  </header>
 
-            <label for="sangue" style="display: block; margin-bottom: 5px; font-weight: bold;">Tipo Sanguíneo:</label>
-            <input type="sangue" id="sangue" name="sangue" required
-                style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; font-family: 'Times New Roman', Times, serif;">
 
-            <label for="lamentacao" style="display: block; margin-bottom: 5px; font-weight: bold;">Lamentação:</label>
-            <textarea id="lamentacao" name="lamentacao"
-                style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 5px; resize: vertical; height: 100px; font-family: 'Times New Roman', Times, serif;"></textarea>
+  <main style="margin-top: 60px;">
 
-            <input type="submit" value="Enviar"
-                style="background-color: #333; color: white; border: none; padding: 12px 20px; cursor: pointer; border-radius: 5px; width: 100%; font-family: 'Times New Roman', Times, serif;">
-        </form>
-    </div>
 
-    <footer id="contato" style="text-align: center; margin-top: 40px; padding: 20px; background-color: #f1f1f1; color: #555; font-family: 'Times New Roman', Times, serif;">
-        <p>&copy; 666 a.C. Solitude Aeterna (51) 666-777</p>
-    </footer>
+    <section id="introducao" style="background-color: #222; padding: 60px 20px; margin-bottom: 30px;">
+      <div style="background-image: url('https://images.wallpapersden.com/image/download/topography-abstract-black-texture_a2lmZmiUmZqaraWkpJRnbW1lrWZtZWU.jpg'); background-size: cover; background-position: center; padding: 60px 20px; color: white;">
+        <h1 style="font-size: 36px; text-align: center;">Felipe Cantini</h1>
+      </div>
+    </section>
+
+
+    <section id="habilidades" style="background-color: #f4f4f4; padding: 40px 20px; margin-bottom: 30px;">
+      <h2 style="font-size: 28px; text-align: left;">Minhas Habilidades</h2>
+      <ul style="font-size: 18px;">
+        <li><span style="color: #007BFF;">HTML5</span></li>
+        <li>JAVA</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="contato" style="background-color: #eee; padding: 40px 20px; margin-bottom: 30px;">
+      <h2 style="font-size: 28px; text-align: left;">Entre em Contato</h2>
+      <form>
+        <div style="margin-bottom: 10px;">
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" required style="width: 100%; padding: 8px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" required style="width: 100%; padding: 8px;">
+        </div>
+        <div style="margin-bottom: 10px;">
+          <label for="mensagem">Mensagem:</label><br>
+          <textarea id="mensagem" name="mensagem" rows="4" required style="width: 100%; padding: 8px;"></textarea>
+        </div>
+        <button type="submit" style="padding: 10px 20px; background-color: #333; color: white; border: none; cursor: pointer;">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer style="background-color: #111; color: white; text-align: center; padding: 20px;">
+    <p>&copy; 2025 - Felipe Cantini. Todos os direitos reservados.</p>
+    <p>Contato: <a href="mailto:felipeccantini@gmail.com" style="color: #00ccff;">felipeccantini@gmail.com</a></p>
+  </footer>
+
 </body>
 </html>
