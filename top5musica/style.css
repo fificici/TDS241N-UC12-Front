@@ -1,0 +1,25 @@
+.titulo {
+    font-size: 20px;
+    background-color: lightgray;
+}
+
+.tabela th,
+.tabela td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+.tabela {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tabela img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top5 {
+    text-align: center;
+}
